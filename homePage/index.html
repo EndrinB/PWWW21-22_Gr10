@@ -203,5 +203,71 @@
         </form>
       </section>
     </footer>
+        <div class="copyright">
+      <p>Copyright &copy; 2021 - All Right Reserved</p>
+    </div>
+  </div>
+
+  <div class="form-popup" id="login">
+    <form class="form-container" id="blur">
+      <h1>Login</h1>
+
+      <div class="inputs">
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+      </div>
+
+      <div class="buttons">
+        <button type="submit" class="btn" onclick="showAlert()">Login</button>
+        <button type="button" class="btn cancel" onclick="closeLogin()">Close</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="form-popup" id="sign-up">
+    <form class="form-container" onsubmit="return validate()" method="post">
+      <h1>Sign Up</h1>
+      <p>Create account for memories</p>
+      <hr>
+      <div class="inputs">
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="something@mail.com" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input id="pw1" type="password" placeholder="Enter Password" name="psw"  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+
+        <label for="psw"><b>Confirm Password</b></label>
+        <input id="pw2" type="password" placeholder="Enter Password" name="psw" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+      
+
+      <div class="gender">
+        <div class="male">
+          <input type="radio" id="html" name="gender" value="male" required>
+          <label for="html">Male</label><br>
+        </div>
+        <div class="female">
+          <input type="radio" id="css" name="gender" value="female" required>
+          <label for="css">Female</label><br>
+        </div>
+      </div>
+      <div class="age">
+        <label for="age"><b>Age</b></label>
+        <input type="text" placeholder="Enter age" name="age" required id="age">
+      </div>
+      </div>
+      <label class="remember-me">
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+        Accept Terms and Agreements
+      </label>
+
+      <div class="buttons">
+        <button type="submit" class="btn">Sign up</button>
+        <button type="button" class="btn cancel" onclick="closeSignUp()">Close</button>
+      </div>
+    </form>
+  </div>
 </body>
 </html>

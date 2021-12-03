@@ -1,0 +1,62 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  /*Perdorimi i vetive background: origin, size, property*/
+  background-color: lightgray;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-size: 100%;
+}
+
+body.night{
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  /*Perdorimi i vetive background: origin, size, property*/
+  background-color: gray;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-size: 100%;
+}
+.logo h1:active {
+  animation: zoom ease 10s alternate;
+  user-select: none;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1.05);
+    transform: rotate(20deg) translate(30%, 0) skew(20deg);
+  }
+  10% {
+    transform: scale(1.05);
+    transform: rotate(45deg) skew(50deg);
+    transform: rotateX(30deg);
+  }
+  25% {
+    transform: scale(1.05);
+    transform: rotate(90deg) skew(70deg);
+    transform: rotateY(30deg);
+  }
+  50% {
+    transform: scale(1.05);
+    transform: rotate(135deg) skew(90deg);
+  }
+  75% {
+    transform: scale(1.15);
+    transform: rotate(180deg) skew(100deg);
+    transform: rotateZ(40deg);
+  }
+
+  100% {
+    transform: scale(1.25);
+    transform: rotate(360deg) translate(0, 30%);
+  }
+}
