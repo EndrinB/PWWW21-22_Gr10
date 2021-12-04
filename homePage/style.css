@@ -60,3 +60,131 @@ body.night{
     transform: rotate(360deg) translate(0, 30%);
   }
 }
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.content {
+  width: 1000px;
+  margin: 20px auto;
+  background-color: #e9e8e3;
+  border-radius: 5px;
+  box-shadow: 0 0 10px black;
+}
+
+.content .top-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/*Perdorimi i font family dhe font style*/
+.content .top-row .logo {
+  margin-left: 50px;
+  font-style: normal;
+  font-family: times-new-roman;
+}
+
+.content .top-row .logo h1 {
+  margin-bottom: 0;
+  /*Perdorimi i CSS per vendosje te fontit , ngjyrave dhe madhesise*/
+  color: #666666;
+  font-size: 50px;
+  font-weight: 200;
+}
+
+#firstLetter {
+  font-size: 1.2em;
+}
+
+.content .top-row .logo p {
+  margin-top: -10px;
+  color: #999999;
+  /*Perdorimi i text align*/
+  text-align: center;
+}
+
+.content .top-row .authentication {
+  margin-right: 50px;
+}
+
+.content .top-row .authentication button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background: lightgray;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.content .top-row .authentication .sign-up{
+box-shadow: 0 0 2px black;
+}
+
+.content .top-row .authentication .login {
+box-shadow: 0 0 2px black;
+}
+
+.content .top-row .authentication .sign-up:hover {
+  background-color: #54e954;
+  color: white;
+}
+
+.content .top-row .authentication .login:hover {
+  background-color: #4c8be9;
+  color: white;
+}
+
+/*Perdorimi i listave dhe tabelave me CSS*/
+.content .menu ul {
+  box-shadow: 0 0 10px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(50%, #474545),
+    to(black)
+  );
+  background: linear-gradient(to bottom, #474545 50%, black);
+  width: 90%;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 10px auto 30px auto;
+  border-radius: 5px;
+}
+
+.content .menu ul li {
+  padding: 10px;
+}
+
+/*Perdorimi i text color, trasnform , alignment*/
+.content .menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: time;
+}
+
+.content .menu ul li a:hover {
+  color: #b4afaf;
+}
