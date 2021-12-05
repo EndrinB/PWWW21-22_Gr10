@@ -316,3 +316,157 @@ textarea {
 textarea {
   resize: none;
 }
+input[type="submit"] {
+  font-weight: bold;
+  width: auto;
+  padding: 4px 7px;
+}
+
+.content .copyright {
+  background-color: #2d2e2e;
+  color: #737373;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 20px;
+}
+
+.content .copyright p {
+  margin: 0;
+  padding: 15px;
+}
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 15%;
+  right: 35%;
+  z-index: 9;
+  animation: fadeIn ease 0.7s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.form-container {
+  max-width: 500px;
+  padding: 10px;
+  background-color: #e9e8e3;
+  border-radius: 5px;
+  box-shadow: 0 0 5px black;
+}
+
+
+.form-container h1,.form-container p{
+  margin-left: 23px;
+}
+
+.form-container .gender {
+  display: flex;
+  margin: 0 0 20px 0;
+}
+
+.form-container .gender .female {
+  margin-left: 15px;
+}
+
+.form-container .remember-me {
+  margin-left: 23px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  color: black;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.btn {
+  display: inline-block;
+
+  font-size: 1.1rem;
+  font-family: inherit;
+  font-weight: 500;
+  border: none;
+  padding: 1.75rem 4.5rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  background-image: linear-gradient(to bottom, #333333 50%, #2b2b2b 50%);
+  border-radius: 10px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 20px;
+  color: white;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.form-container .btn {
+  opacity: 0.8;
+}
+
+.form-container hr {
+  margin: 20px auto;
+  height: 1px;
+  border: none;
+  /*Perdorimi i gradientit linear*/
+  background: -webkit-gradient(
+    linear,
+    0 0,
+    100% 0,
+    from(transparent),
+    to(transparent),
+    color-stop(50%, #c4c4c4)
+  );
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .inputs {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form-container .buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
