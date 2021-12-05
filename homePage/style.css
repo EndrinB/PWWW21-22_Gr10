@@ -188,3 +188,28 @@ box-shadow: 0 0 2px black;
 .content .menu ul li a:hover {
   color: #b4afaf;
 }
+#pageUpDirecter {
+  margin-bottom: 0px;
+}
+
+/*Perdorimi i styling links*/
+#pageUpDirecter a {
+  /*Perdorimi i outline vetive*/
+  outline: none;
+
+  /*Perdorimi i box shadow dhe border radius*/
+  box-shadow: 0 0 5px black;
+  text-decoration: none;
+  border: 2px solid #131313;
+  background-color: #131313;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+#pageUpDirecter a:hover {
+  /*Perdorim i radial gradient*/
+  background: radial-gradient(#4b4e4e, #323434);
+}
