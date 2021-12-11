@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" manifest="sliderAppCache.txt">
+<head>
+  <meta charset="UTF-8">
+  <title>Voyage Slider</title>
+  
+<link rel="stylesheet" href="sliderStyle.css">
+</head>
+<body>
+<div class="app">
+    <div class="cardList">
+        
+        <div class="cards__wrapper">
+            <div class="card current--card">
+                <div class="card__image">
+                    <img  alt="" />
+                </div>
+            </div>
+            <div class="card next--card" onclick="swapCards('right')">
+                <div class="card__image">
+                    <img  alt="" />
+                </div>
+            </div>
+            <div class="card previous--card" onclick="swapCards('left')">
+                <div class="card__image">
+                    <img  alt="" />
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="infoList">
+        <div class="info__wrapper">
+            <div class="info current--info">
+                <h1 class="text name">My Memory</h1>
+                <h4 class="text location">Endrin Beqiri</h4>
+                <p class="text description">The memories of mine</p>
+            </div>
+            <div class="info next--info">
+                <h1 class="text name">My Dream</h1>
+                <h4 class="text location">Albin Hoxha</h4>
+                <p class="text description">Adventure is never far away</p>
+            </div>
+            <div class="info previous--info">
+                <h1 class="text name">My Passion</h1>
+                <h4 class="text location">Vesa Ternava</h4>
+                <p class="text description">Let your dreams come true</p>
+            </div>
+        </div>
+    </div>
