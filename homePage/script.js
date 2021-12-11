@@ -58,3 +58,28 @@ function validateAge(){
 function isNumber(n) {
   return !isNaN(parseFloat(n)) && isFinite(n);
 }
+function changeBackground() {
+  var now = new Date();
+  var hours = now.getHours();
+  var ft = now.toLocaleString("en-AL", {
+      hour: "numeric",
+      minute: "numeric",
+      hour12: true
+  });
+
+    console.log(hours);
+  if (5 <= hours && hours < 8) {
+      document.body.classList.remove('night');
+  }
+  if (8 <= hours && hours < 17) {
+      document.body.classList.remove('night');
+  }
+  if (17 <= hours && hours < 19) {
+      document.body.classList.add('night');
+  }
+  if (19 <= hours) {
+      document.body.classList.add('night');
+  }
+}
+changeBackground();
+window.setInterval(changeBackground, 1000);
