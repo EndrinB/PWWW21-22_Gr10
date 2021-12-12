@@ -83,3 +83,33 @@ function changeBackground() {
 }
 changeBackground();
 window.setInterval(changeBackground, 1000);
+
+// sessionStorage
+
+let name = document.getElementById('userName');
+let email = document.getElementById('email');
+let textArea = document.getElementById('textArea');
+
+window.addEventListener('load', (event) => {
+     name.value = sessionStorage.getItem('userName'); 
+     email.value = sessionStorage.getItem('email'); 
+    textArea.value = sessionStorage.getItem('textArea'); 
+
+});
+
+name.addEventListener("change", function() {
+  // And save the results into the session storage object
+  sessionStorage.setItem("userName", name.value);
+});
+
+email.addEventListener("change", function() {
+  // And save the results into the session storage object
+  sessionStorage.setItem("email", email.value);
+});
+
+function saveText() {
+  console.log(textArea.value);
+  if(textArea.value != ""){
+  sessionStorage.setItem("textArea", textArea.value);
+  }
+};
