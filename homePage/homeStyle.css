@@ -119,3 +119,80 @@
 .content main .quote p{
   text-align: center;
 }
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin: 30px 55px;
+    border-radius: 10px;
+    background: linear-gradient(gray,black);
+    
+}
+
+/*Perdorimi i CSS per vendosje te tekstit*/
+#message:before{
+ content : "Little moments big memories";
+}
+
+.content main .quote hr {
+  margin: 30px auto;
+  height: 1px;
+  border: none;
+  width: 90%;
+  /*Perdorimi i gradientit linear*/
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, #c4c4c4));
+}
+
+.content main .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px 0;
+
+}
+
+.content main .cards .card {
+  margin: 15px;
+  width: 200px;
+  box-shadow: 0 0 10px black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #333333;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.content main .cards .card img {
+  padding: 10px;
+}
+
+.content main .cards .card h4 {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.content main .cards .card a {
+  text-decoration: none;
+}
+
+.content main .cards .card a span {
+  text-transform: uppercase;
+  color: #ebc563;
+  font-size: 14px;
+}
+
+.content main .cards .card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.content main .cards .cardContainer {
+  padding: 2px 16px;
+}
+
+
+/*pageUpDirecter Eshte zhvendosur tek style.css*/
