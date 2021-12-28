@@ -128,3 +128,104 @@ function displayFile(){
     dragArea.classList.remove('active');
   }
 };
+
+// Vizatimi
+ctx.lineCap = 'round';
+const colorPicker = document.querySelector( '.js-color-picker');
+
+colorPicker.addEventListener( 'change', event => {
+    color = event.target.value; 
+    ctx.strokeStyle = color; 
+} );
+
+const lineWidthRange = document.querySelector( '.js-line-range' );
+const lineWidthLabel = document.querySelector( '.js-range-value' );
+
+lineWidthRange.addEventListener( 'input', event => {
+    const width = event.target.value;
+    lineWidthLabel.innerHTML = width;
+    ctx.lineWidth = width;
+} );
+
+let x = 0, y = 0;
+let isMouseDown = false;
+
+const stopDrawing = () => { isMouseDown = false; }
+const startDrawing = event => {
+    isMouseDown = true;   
+   [x, y] = [event.offsetX, event.offsetY];  
+}
+const drawLine = event => {
+    if ( isMouseDown ) {
+        const newX = event.offsetX;
+        const newY = event.offsetY;
+        ctx.beginPath();
+        ctx.moveTo( x, y );
+        ctx.lineTo( newX, newY );
+        ctx.stroke();
+        [x, y] = [newX, newY];
+    }
+}
+
+canvas.addEventListener( 'mousedown', startDrawing );
+canvas.addEventListener( 'mousemove', drawLine );
+canvas.addEventListener( 'mouseup', stopDrawing );
+canvas.addEventListener( 'mouseout', stopDrawing );
+
+function resetCanvas(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  dragArea.innerHTML = `<div class="icon">
+          <!-- Perdorimi i atributeve width dhe height -->
+          <!-- Perdorimi i tagut img dhe te gjitha atributet e tij -->
+            <img src="img/image.png" alt="image icon" width="50px" height="50px">
+        </div>
+
+        <span class="header"> Drag & Drop</span>
+        <span class="header"> or <span class="button"><b><u>browse</u></b></span></span>
+        <input class="input" type="file" hidden>
+        <span class="support">Supports: <abbr title="Joint Photographic Expert Group">JPEG</abbr>, <abbr title="Joint Photographic Expert Group">JPG</abbr>, <abbr title="Portable Graphics Format">PNG</abbr></span>`;
+   dragArea.classList.remove('active');
+}
+
+function validateForm() {
+  let x = document.forms["memory"]["name"].value;
+  let y = document.forms["memory"]["author"].value;
+  if (x == "" || y =="") {
+    alert("Form must be filled out");
+    return false;
+  }else{
+    return true;
+  }
+}
+// Button handling
+
+function createMemory(){
+    if(validateForm()){
+    alert("Memory Created");
+    localStorage.clear();
+    location.reload();
+}
+}
+
+function saveMemory(){
+    localStorage.setItem('canvas', canvas.toDataURL());
+    localStorage.setItem('name',document.forms["memory"]["name"].value);
+    localStorage.setItem('author',document.forms["memory"]["author"].value);
+    alert("Memory Saved for Later")
+}
+
+window.addEventListener('load', (event) => {
+      let saveImage = localStorage.getItem('canvas');
+      if(saveImage){
+        let image = new Image();
+        image.src = saveImage;
+
+            image.onload = () => {
+                ctx.drawImage(image,0,0,canvas.width,canvas.height);
+            };
+        }
+
+    document.forms["memory"]["name"].value = localStorage.getItem('name');
+    document.forms["memory"]["author"].value = localStorage.getItem('author');  
+
+});
