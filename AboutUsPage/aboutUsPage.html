@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<head>
+  <title>Memories</title>
+  <link rel="stylesheet" href="../homePage/style.css">
+    <link rel="stylesheet" href="aboutStyle.css">
+
+  <title>Home Page</title>
+</head>
+<body>
+  <div class="content">
+    <header>
+      <div class="top-row"> 
+        <div class="logo">
+          <!-- Perdorimi i span me specifikat e tij -->
+          <h1><span id="firstLetter">M</span>EMORIES</h1>
+          <p>Where memories are stored</p>
+        </div>
+        <div class="authentication">
+          <button class="sign-up" onclick="signUp()">Sign Up</button>
+          <button class="login" onclick="login()">Login</button>
+        </div>
+      </div>
+      <div class="menu">
+        <nav>
+          <ul>
+            <!-- Perdorimi i atributit id ne linqe -->
+            <li><a href="../homePage/index.html" id = "homePage">Homepage</a></li>
+            <li><a href="../galleryPage/secondPage.html">Gallery</a></li>
+            <li><a href="../uploadImagePage/uploadPage.html">Upload Image</a></li>
+            <li><a href="../AwardPage/awardsPage.html">Awards</a></li>
+            <li><a href="">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            Albin Hoxha
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            Endrin Beqiri
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            Vesa Ternava
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+         <div class="head_operations">
+         <figure style="margin:0">
+         <img class="operations__icon-1" src="img/tiger.jpg">
+         <figcaption>
+          Backend 
+        </figcaption>
+        </figure>
+         <div class="dummy_div"></div> 
+        <h5 class="operations__header">
+          Albin Hoxha
+        </h5>
+       </div>
+        <hr>
+        <div class="operations_socials">
+          <button  class="facebook" onclick="openInNewTab('www.facebook.com');"></button>
+          <button  class="twitter"onclick="openInNewTab('www.twitter.com');"></button>
+          <button  class="instagram"onclick="openInNewTab('www.instagram.com');"></button>
+          <button  class="linkedin"onclick="openInNewTab('www.linkedin.com');"></button>
+        </div>
+        <hr> 
+        <div class="bio"> 
+        <p style="max-height: 500px; overflow: auto;">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt moll  Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum. badWords  Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum.dsadsadsaads  Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum.dsadsadsaads
+        </p>
+      </div>
+
+        </div>
+
+        <div
+        class="operations__content operations__content--2"
+      >
+       <div class="head_operations">
+       <figure style="margin:0">
+         <img class="operations__icon-1" src="img/tiger.jpg">
+         <figcaption>
+          FullStack
+        </figcaption>
+        </figure>
+       <div class="dummy_div"></div> 
+      <h5 class="operations__header">
+        Endrin Beqiri
+      </h5>
+     </div>
+      <hr>
+      <div class="operations_socials">
+        <button  class="facebook" onclick="openInNewTab('www.facebook.com');"></button>
+        <button  class="twitter"onclick="openInNewTab('www.twitter.com');"></button>
+        <button  class="instagram"onclick="openInNewTab('www.instagram.com');"></button>
+        <button  class="linkedin"onclick="openInNewTab('www.linkedin.com');"></button>
+      </div>
+      <hr> 
+      <div class="bio"> 
+      <p style="max-height: 500px; overflow: auto;">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt moll  Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.dsadsadsaads  Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.dsadsadsaads  Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.dsadsadsaads
+      </p>
+    </div>
+
+      </div>
+
+
+      <div
+      class="operations__content operations__content--3"
+    >
+     <div class="head_operations">
+     <figure style="margin:0">
+         <img class="operations__icon-1" src="img/tiger.jpg">
+         <figcaption>
+          Frontend
+        </figcaption>
+        </figure>
+     <div class="dummy_div"></div> 
+    <h5 class="operations__header">
+      Vesa Ternava
+    </h5>
+   </div>
+    <hr>
+    <div class="operations_socials">
+      <button  class="facebook" onclick="openInNewTab('www.facebook.com');"></button>
+      <button  class="twitter"onclick="openInNewTab('www.twitter.com');"></button>
+      <button  class="instagram"onclick="openInNewTab('www.instagram.com');"></button>
+      <button  class="linkedin"onclick="openInNewTab('www.linkedin.com');"></button>
+    </div>
+    <hr> 
+    <div class="bio"> 
+    <p style="max-height: 500px; overflow: auto;">
+      Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt moll  Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit
+      anim id est laborum.dsadsadsaads  Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit
+      anim id est laborum.dsadsadsaads  Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit
+      anim id est laborum.dsadsadsaads
+    </p>
+  </div>
+
+    </div>
+      </div>
+      <div class ="team">
+        <div class = "info">
+        <h3>OUR TEAM</h3>
+        <p>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt moll  Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit
+      anim id est laborum.dsadsadsaads  Duis aute irure dolor in reprehenderit in voluptate velit esse
+    </p>
+  </div>
+  <div class = "address">
+    <h3> OUR ADDRESS</h3>
+    <div id="map">
+    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1791405.5498416687!2d83.25546682647361!3d28.724358208797184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995b9ebef1235bd%3A0x3ae1297b70640201!2sHimalayas!5e0!3m2!1sen!2s!4v1641249708867!5m2!1sen!2s" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+      </div>
+    </main>
+              <!-- Perdorimi i hyperlink brenda faqes -->
+          <p align="center" id="pageUpDirecter"><a href="#firstLetter">Go Up &#8593</a></p>
+     <footer>
+           <section class="Quarter2">
+             <h3>Our Team</h3>
+             <div class="profile">
+               <img src="../img/profile.jpg">
+                <div class = "description">
+               <h4>Endrini's Bio</h4>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, nemo. Architecto impedit illo unde ab molestiae nulla veniam, veritatis iusto.</p>
+               <a href="">Read More &#xbb</a>
+             </div>
+             </div>
+              <div class="profile">
+               <img src="../img/alipash.jpg">
+               <div class = "description">
+               <h4>Albini's Bio</h4>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, nemo. Architecto impedit illo unde ab molestiae nulla veniam, veritatis iusto.</p>
+               <a href="">Read More &#xbb</a>
+             </div>
+             </div>
+              <div class="profile">
+               <img src="../img/profile.jpg">
+                <div class = "description">
+               <h4>Vesa's Bio</h4>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, nemo. Architecto impedit illo unde ab molestiae nulla veniam, veritatis iusto.</p>
+               <a href="">Read More &#xbb</a>
+             </div>
+             </div>
+           </section>
+           <section class="Quarter1">
+             <h3>Contact Info</h3>
+             <div class="contactInfo">
+                <h4>Endrini's Bio</h4>
+                <p><span class="role">Admin</span>,endrinbeqiri.com<br />
+                8th November,2001
+                </p>
+                <p>
+                <address>
+                Phone: +383 44 123 333<br />
+                <!-- Perdorimi i hyperlinkut per te derguar email -->
+                Email: <a href="mailto:endrinbeqiri@mail.com"> endrinbeqiri@mail.com </a>
+              </address>
+              </p>
+             </div>
+              <div class="contactInfo">
+                <h4>Albini's Bio</h4>
+                <p><span class="role">Admin</span>,albinhoxha.com<br />
+                  IDK Muaji,NdonjeVit
+                </p>
+                <p>
+                <address>
+                Phone: +383 44 123 333<br />
+                Email: <a href="mailto:albinhoxha@mail.com"> albinhoxha@mail.com</a>
+              </address>
+              </p>
+             </div>
+              <div class="contactInfo">
+                <h4>Vesa's Bio</h4>
+                <p><span class="role">Admin</span>,vesaternava.com<br />
+                IDK Muaji,NdonjeVit
+              </p>
+              <p>
+                <address>
+                Phone: +383 44 123 333<br />
+                Email: <a href="mailto:vesaternava@mail.com"> vesaternava@mail.com</a>
+              </address>
+              </p>
+             </div>
+           </section>
+           <section class="Quarter1">
+             <h3>Email Us</h3>
+             <!-- Kuptimi dhe qellimi i html formave -->
+             <form action="" method="post">
+               <input type="text" id="userName" name="name" placeholder="Name">
+          <input type="email" id="email" name="email" placeholder="Email">
+          <textarea rows="8" id="textArea" placeholder="Message"></textarea><br />
+               <input type="submit" name="submit" value="SUBMIT">
+             </form>
+           </section>
+        </footer>
+      <div class="copyright">
+        <p>Copyright &copy; 2021 - All Right Reserved</p>
+      </div>
+  </div>
+  <div class="form-popup" id="login">
+    <form class="form-container" id="blur">
+      <h1>Login</h1>
+
+      <div class="inputs">
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+      </div>
+
+      <div class="buttons">
+        <button type="submit" class="btn" onclick="showAlert()">Login</button>
+        <button type="button" class="btn cancel" onclick="closeLogin()">Close</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="form-popup" id="sign-up">
+    <form class="form-container">
+      <h1>Sign Up</h1>
+      <p>Create account for memories</p>
+      <hr>
+      <div class="inputs">
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label for="psw"><b>Confirm Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <div class="gender">
+        <div class="male">
+          <input type="radio" id="html" name="gender" value="male" required>
+          <label for="html">Male</label><br>
+        </div>
+        <div class="female">
+          <input type="radio" id="css" name="gender" value="female" required>
+          <label for="css">Female</label><br>
+        </div>
+      </div>
+      <div class="age">
+        <label for="age"><b>Age</b></label>
+        <input type="text" placeholder="Enter age" name="age" required id="age">
+      </div>
+    </div>
+      <label class="remember-me">
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+        Accept Terms and Agreements
+      </label>
+
+      <div class="buttons">
+        <button type="submit" class="btn">Sign up</button>
+        <button type="button" class="btn cancel" onclick="closeSignUp()">Close</button>
+      </div>
+    </form>
+  </div>
+  <script src="../homePage/script.js"></script>
+  <script src="aboutScript.js"></script>
+  </body>
+</html>
