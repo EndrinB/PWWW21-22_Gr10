@@ -1,0 +1,243 @@
+.btn {
+  display: inline-block;
+
+  font-size: 1.1rem;
+  font-family: inherit;
+  font-weight: 500;
+  border: none;
+  padding: 1.75rem 4.5rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  background-image: linear-gradient(to bottom, #333333 50%, #2b2b2b 50%);
+  border-radius: 10px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 20px;
+  color: white;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.operations {
+  width: 50rem;
+  margin: 4rem auto 0 auto;
+}
+
+.operations__tab-container {
+  position: relative;
+  top: 40px;
+  display: flex;
+  border-color: #333333;
+  /*flex-direction: column;*/
+}
+
+.operations__tab {
+  transform: translateY(-50%);
+}
+
+.operations__tab span {
+  margin-right: 1rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.operations__tab {
+  background-color: #9f9f9f;
+}
+
+.operations__tab:hover {
+  background-color: var(--color-secondary-darker);
+}
+
+.operations__tab--active {
+  transform: translateY(-66%);
+}
+.about-text {
+  width: 5 50px;
+}
+.operations__content {
+  display: block;
+  height: 700px;
+  /* JUST PRESENTATIONAL */
+  font-size: 1.7rem;
+  padding: 2.5rem 7rem 6.5rem 7rem;
+  box-shadow: 0 0 10px black;
+}
+.operations__content--1 {
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  /*border-style: solid;
+  border-width: 5px;
+  border-color: #333333;*/
+  border-radius: 25px;
+}
+.operations__content--2 {
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+ /* border-style: solid;
+  border-width: 5px;
+  border-color: #333333;*/
+  border-radius: 25px;
+}
+.operations__content--3 {
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  /*border-style: solid;
+  border-width: 5px;
+  border-color: #333333;*/
+  border-radius: 25px;
+}
+.operations__content--active {
+  grid-template-columns: 7rem 1fr;
+  column-gap: 3rem;
+  row-gap: 0.5rem;
+}
+
+.operations__header {
+  width: 100%;
+  border-bottom: 2px solid black;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 500;
+  align-self: center;
+  font-family: times-new-roman;
+}
+
+.operations__icon {
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+}
+
+.operations__content p {
+  grid-column: 2;
+}
+
+.operations__icon-1 {
+  border: 5px solid black;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+}
+.operations__icon--2 {
+  border: 5px solid black;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+}
+.operations__icon--3 {
+  border: 5px solid black;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+.head_operations {
+  display: flex;
+  align-items: center;
+  max-height: 200;
+}
+.dummy_div {
+  width: 50px;
+}
+.content_dummy_div {
+  height: 10px;
+  background-color: #333333;
+  color: #333333;
+}
+.operations_socials {
+  display: flex;
+}
+.facebook {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  background: url(img/facebook.png);
+  border: 1px solid #333333;
+  color: white;
+  size: 50px;
+}
+.twitter {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  background: url(img/twitter.png);
+  border: 1px solid #333333;
+  color: white;
+  size: 50px;
+}
+.instagram {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  background: url(img/instagram.png);
+  background-repeat: no-repeat;
+  border: 1px solid #333333;
+  color: white;
+  size: 50px;
+}
+.linkedin {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  background: url(img/linkedIn.png);
+  border: 1px solid #333333;
+  color: white;
+  size: 50px;
+}
+.operations_socials {
+  border-radius: 50%;
+  column-gap: 15px;
+}
+.operations__content--2 {
+  display: none;
+}
+
+.operations__content--3 {
+  display: none;
+}
+
+figcaption{
+
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 0.8em;
+  text-align: center;
+  font-style: italic;
+}
+
+.bio p{
+  column-rule: 1px solid black;
+  column-count: 2;
+  font-size: 0.7em;
+  height: 300px;
+}
+
+.info, .address{
+  margin: 20px 60px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px black;
+}
+
+.info h3, .address h3{
+  border-bottom: 2px solid white;
+  text-align: center;
+  font-family: times-new-roman;
+}
+
+#map{
+  display: flex;
+  justify-content: center;
+}
+
+

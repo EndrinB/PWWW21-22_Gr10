@@ -75,19 +75,19 @@ const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
 button.onclick = () =>{
-  input.click();
+	input.click();
 };
 
 input.addEventListener('change', function() {
-  file = this.files[0];
-  dragArea.classList.add('active');
-     displayFile();
+	file = this.files[0];
+	dragArea.classList.add('active');
+	   displayFile();
 });
 
 dragArea.addEventListener('dragover', (event) => {
-  event.preventDefault();
-  dragArea.classList.add('active');
-  dragText.textContent = 'Release to Upload';
+	event.preventDefault();
+	dragArea.classList.add('active');
+	dragText.textContent = 'Release to Upload';
 });
 
 dragArea.addEventListener('dragleave', (event) => {
@@ -96,37 +96,37 @@ dragArea.addEventListener('dragleave', (event) => {
 });
 
 dragArea.addEventListener('drop', (event) => {
-  event.preventDefault();
-  
+	event.preventDefault();
+	
    file = event.dataTransfer.files[0];
    displayFile();
 });
 
 function displayFile(){
-  let fileType = file.type;
+	let fileType = file.type;
 
-  let validExtensions = ['image/jpeg','image/jpg','image/png'];
+	let validExtensions = ['image/jpeg','image/jpg','image/png'];
 
-  if(validExtensions.includes(fileType)){
-    let fileReader = new FileReader();
+	if(validExtensions.includes(fileType)){
+		let fileReader = new FileReader();
 
-    fileReader.onload = () => {
-      let fileURL = fileReader.result;
-      let imgTag = `<img id="source" src="${fileURL}" alt="">`;
-      dragArea.innerHTML = imgTag;
+		fileReader.onload = () => {
+			let fileURL = fileReader.result;
+			let imgTag = `<img id="source" src="${fileURL}" alt="">`;
+			dragArea.innerHTML = imgTag;
 
-      let img = document.getElementById("source");
+			let img = document.getElementById("source");
 
-      img.onload = () => {
-        ctx.drawImage(img,0,0,canvas.width,canvas.height);
-      };
-    };
+			img.onload = () => {
+				ctx.drawImage(img,0,0,canvas.width,canvas.height);
+			};
+		};
 
-    fileReader.readAsDataURL(file);
-  }else{
-    alert('file not supported');
-    dragArea.classList.remove('active');
-  }
+		fileReader.readAsDataURL(file);
+	}else{
+		alert('file not supported');
+		dragArea.classList.remove('active');
+	}
 };
 
 // Vizatimi
@@ -173,8 +173,8 @@ canvas.addEventListener( 'mouseup', stopDrawing );
 canvas.addEventListener( 'mouseout', stopDrawing );
 
 function resetCanvas(){
-  ctx.clearRect(0,0,canvas.width,canvas.height);
-  dragArea.innerHTML = `<div class="icon">
+	ctx.clearRect(0,0,canvas.width,canvas.height);
+	dragArea.innerHTML = `<div class="icon">
           <!-- Perdorimi i atributeve width dhe height -->
           <!-- Perdorimi i tagut img dhe te gjitha atributet e tij -->
             <img src="img/image.png" alt="image icon" width="50px" height="50px">

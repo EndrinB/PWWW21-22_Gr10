@@ -316,6 +316,7 @@ textarea {
 textarea {
   resize: none;
 }
+
 input[type="submit"] {
   font-weight: bold;
   width: auto;
@@ -469,4 +470,3 @@ input[type="submit"] {
 .open-button:hover {
   opacity: 1;
 }
-

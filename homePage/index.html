@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html manifest="homeAppCache.txt">
 <head>
   <title>Memories</title>
   <link rel="stylesheet" href="style.css">
@@ -36,24 +36,31 @@
     </header>
     <main>
       <div class="slideshow-container">
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="../img/photo.png" alt="slider photo">
+            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis adipisci aut obcaecati saepe
+              placeat quia iure officia, voluptates quod nam!</div>
+          </div>
+          <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
           <!-- Perdorimi i atributit alt -->
-          <img src="../img/photo.png" alt="slider photo">
+          <img src="../img/natureSliderr.jpg" alt="slider photo">
           <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptate veniam ut
             mollitia illum natus commodi! Officiis, amet. Consequatur, tenetur?</div>
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="../img/cardPhoto.jpg" alt="slider photo">
+          <div class="numbertext">3 / 4</div>
+          <img src="../img/people.jpg" alt="slider photo">
           <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis adipisci aut obcaecati saepe
             placeat quia iure officia, voluptates quod nam!</div>
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="../img/photo.png" alt="slider photo">
+          <div class="numbertext">4 / 4</div>
+          <img src="../img/nature.jpg" alt="slider photo">
           <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis laboriosam nam enim
             numquam provident ipsum quam temporibus voluptas optio minima.</div>
         </div>
@@ -68,6 +75,7 @@
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
       </div>
 
       <div class="quote">
@@ -83,43 +91,43 @@
        </div>
       <div class="cards">
         <div class="card">
-          <img src="../img/cardPhoto.jpg" style="width:100%">
+          <img src="../img/sport.jpg" style="width:100%">
           <div class="cardContainer">
-            <h4>Lorem Ipsum</h4>
+            <h4>Sport</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, alias.</p>
-            <a href=""><span>View this Category</span></a>
+            <a href="../sliderPage/sliderPage.html?category=sport&backPath=homePage/index"><span>View this Category</span></a>
           </div>
         </div>
 
         <div class="card">
-          <img src="../img/cardPhoto.jpg" style="width:100%">
+          <img src="../img/nature.jpg" style="width:100%">
           <div class="cardContainer">
-            <h4>Lorem Ipsum</h4>
+            <h4>Nature</h4>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, similique!</p>
-            <a href=""><span>View this Category</span></a>
+            <a href="../sliderPage/sliderPage.html?category=nature&backPath=homePage/index"><span>View this Category</span></a>
           </div>
         </div>
 
         <div class="card">
-          <img src="../img/cardPhoto.jpg" style="width:100%">
+          <img src="../img/ball.jpg" style="width:100%">
           <div class="cardContainer">
-            <h4>Lorem Ipsum</h4>
+            <h4>Ball</h4>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, similique!</p>
-            <a href=""><span>View this Category</span></a>
+            <a href="../sliderPage/sliderPage.html?category=ball&backPath=homePage/index"><span>View this Category</span></a>
           </div>
         </div>
 
         <div class="card">
-          <img src="../img/cardPhoto.jpg" style="width:100%">
+          <img src="../img/art.jpg" style="width:100%">
           <div class="cardContainer">
-            <h4>Lorem Ipsum</h4>
+            <h4>Art</h4>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, similique!</p>
-            <p><a href=""><span>View this Category</span></a></p>
+            <p><a href="../sliderPage/sliderPage.html?category=art&backPath=homePage/index"><span>View this Category</span></a></p>
           </div>
         </div>
       </div>
     </main>
-      <!-- Perdorimi i hyperlink brenda faqes -->
+    <!-- Perdorimi i hyperlink brenda faqes -->
     <p align="center" id="pageUpDirecter"><a href="#firstLetter">Go Up &#8593</a></p>
     <footer>
       <section class="Quarter2">
@@ -203,7 +211,7 @@
         </form>
       </section>
     </footer>
-        <div class="copyright">
+    <div class="copyright">
       <p>Copyright &copy; 2021 - All Right Reserved</p>
     </div>
   </div>
@@ -269,5 +277,7 @@
       </div>
     </form>
   </div>
+<script src="homeScript.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

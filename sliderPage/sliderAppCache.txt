@@ -1,0 +1,11 @@
+CACHE MANIFEST
+# 2021-12-25 v1.0.0
+/sliderStyle.css
+/script.js
+
+
+NETWORK:
+*
+
+FALLBACK:
+/html/ /index.html
