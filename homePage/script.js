@@ -1,21 +1,25 @@
 function login() {
     document.getElementsByClassName('content')[0].style.filter = 'blur(4px)';
+    document.getElementsByClassName('content')[0].style.pointerEvents = 'none';
   document.getElementById("login").style.display = "block";
 }
 
 function closeLogin() {
   document.getElementById("login").style.display = "none";
   document.getElementsByClassName('content')[0].style.filter = 'blur(0px)';
+  document.getElementsByClassName('content')[0].style.pointerEvents = 'auto';
 }
 
 function signUp() {
    document.getElementsByClassName('content')[0].style.filter = 'blur(4px)';
+   document.getElementsByClassName('content')[0].style.pointerEvents = 'none';
   document.getElementById("sign-up").style.display = "block";
 }
 
 function closeSignUp() {
   document.getElementById("sign-up").style.display = "none";
     document.getElementsByClassName('content')[0].style.filter = 'blur(0px)';
+    document.getElementsByClassName('content')[0].style.pointerEvents = 'auto';
 
 }
 function validate(){
@@ -58,6 +62,22 @@ function validateAge(){
 function isNumber(n) {
   return !isNaN(parseFloat(n)) && isFinite(n);
 }
+
+
+// var w;
+
+// function startWorker() {
+//   if(typeof(Worker) !== "undefined") {
+//     if(typeof(w) == "undefined") {
+//       w = new Worker("changeBackgroundOnTime.js");
+//     }
+//     w.onmessage = changeBackground();
+   
+//   } 
+//   console.log("aaa");
+// }
+//startWorker();
+
 function changeBackground() {
   var now = new Date();
   var hours = now.getHours();

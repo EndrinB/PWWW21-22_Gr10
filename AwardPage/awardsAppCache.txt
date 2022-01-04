@@ -1,0 +1,13 @@
+CACHE MANIFEST
+# 2021-12-25 v1.0.0
+/awardsStyle.css
+/awardsScript.js
+/script.js
+/style.css
+
+
+NETWORK:
+*
+
+FALLBACK:
+/html/ /awardsPage.html

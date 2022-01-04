@@ -1,0 +1,13 @@
+CACHE MANIFEST
+# 2021-12-25 v1.0.0
+/uploadStyle.css
+/uploadScript.js
+/script.js
+/style.css
+
+
+NETWORK:
+*
+
+FALLBACK:
+/html/ /uploadPage.html
