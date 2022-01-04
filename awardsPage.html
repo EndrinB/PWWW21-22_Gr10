@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html manifest="awardsAppCache.txt">
+<head>
+  <title>Memories</title>
+  <link rel="stylesheet" href="awardsStyle.css">
+  <link rel="stylesheet" href="../homePage/style.css">
+  <title>Home Page</title>
+  <style>
+    .awards table{
+    color: black;
+    margin: 25px 0;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.awards table tr {
+  border-bottom: thin solid #dddddd;
+  background-color: #9f9f9f;
+    color: #ffffff;
+    text-align: left;
+}
+.awards table,th,td{
+  border: thin solid black;
+  border-collapse: collapse;
+  
+  width: auto;
+  
+}
+.awards,.website_awards{
+  margin-left: 50px;
+}
+.awards th{
+  background-color: black;
+}
+.awards table tr:nth-of-type(even) {
+  background-color: #333333;
+}
+
+.awards table tr:last-of-type {
+  border-bottom: 2px solid #9f9f9f;
+}
+.awards table tr.active-row {
+  font-weight: bold;
+  color: #9f9f9f;
+}
+.website_awards ol li:not(:last-child) { 
+    margin-bottom: 20px;  
+
+  }
+
+.website_awards ol {
+  border-left:5px solid #333333;
+  padding: 20px;
+}
+
+  </style>
+</head>
+<body>
+  <audio src="audio/music.mp3" autoplay></audio>
+  <div class="content">
+    <header>
+      <div class="top-row"> 
+        <div class="logo">
+          <!-- Perdorimi i span me specifikat e tij -->
+          <h1><span id="firstLetter">M</span>EMORIES</h1>
+          <p>Where memories are stored</p>
+        </div>
+        <div class="authentication">
+          <button class="sign-up" onclick="signUp()">Sign Up</button>
+          <button class="login" onclick="login()">Login</button>
+        </div>
+      </div>
+      <div class="menu">
+        <nav>
+          <ul>
+            <!-- Perdorimi i atributit id ne linqe -->
+            <li><a href="../homePage/index.html" id = "homePage">Homepage</a></li>
+            <li><a href="../galleryPage/secondPage.html">Gallery</a></li>
+            <li><a href="../uploadImagePage/uploadPage.html">Upload Image</a></li>
+            <li><a href="">Awards</a></li>
+            <li><a href="../AboutUsPage/aboutUsPage.html">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+    </header>
+    <main>
+      <div class="awards">
+
+        <h1>
+          Yearly Awards
+        </h1>
+       <table  style='font-size:150%;width:95%;outline-offset: 50px;'>
+          <th>Year</th>
+          <th>Theme</th>
+          <th>By</th>
+          <th>Photo</th>
+          <tr>
+            <td>
+              2017
+            </td>
+            <td>
+              Mountains
+            </td>
+            <td>
+              Albin Hoxha
+            </td>
+            <td>
+              <img src="img/mountains.jpg " width="100%" height="50">
+            </td>
+          </tr>
+          <tr>
+           <td>
+             2018
+           </td>
+           <td>
+             Beach
+           </td>
+           <td>
+             Endrin Beqiri
+           </td>
+           <td >
+             <img src="img/Beach.jpg" width="100%" height="50">
+           </td>
+         </tr>
+         <tr>
+           <td>
+             2019
+           </td>
+           <td>
+             Houses
+           </td>
+           <td>
+             Vesa Ternava
+           </td>
+           <td >
+             <img src="img/houses.jpg" width="100%" height="50">
+           </td>
+         </tr>
+         <tr>
+           <td>
+             2020
+           </td>
+           <td>
+             River
+           </td>
+           <td>
+             Albin Hoxha
+           </td>
+           <td >
+             <img src="img/River.jpg" width="100%" height="50">
+           </td>
+         </tr>
+       </table>
+       </div>
+       <div class="website_awards">
+           <h1>
+             Website Awards
+           </h1>
+           <ol>
+             <li>
+                 "Best Photography", "IOP" Germany 
+                 <ul style="list-style-type: square;">
+                   <li>
+                      <mark>2018</mark>
+                   </li>
+                   <li>
+                    <mark>2019</mark>
+                  </li>
+                  <li>
+                    <mark>2020</mark>
+                  </li>
+                 </ul>
+             </li>
+             <li>
+               "Best Photography", "NYIP" USA 
+               <ul style="list-style-type: circle;">
+                <li>
+                  <mark>2018</mark> 
+                </li>
+               
+              </ul>
+             </li>
+             <li>
+             "Best Photography", "GOLDSMITHS UNIVERSITY OF LONDON" England 
+             <ul style="list-style-type: square;">
+              
+              <li>
+                <mark>2019</mark>
+             </li>
+             <li>
+              <mark>2020</mark>
+             </li>
+            </ul>
+             </li>
+             <li>
+               "Best Photography", "UNM" Mexico 
+               <ul style="list-style-type: circle;">
+                <li>
+                  <mark>2018</mark>
+                </li>
+               
+               <li>
+                <mark>2020</mark>
+               </li>
+              </ul>
+             </li>
+             <li>
+               "Best Photography", "IED" Spain 
+               <ul style="list-style-type: square;">
+                
+                <li>
+                  <mark>2019</mark>
+               </li>
+               
+              </ul>
+             </li>
+             <li>
+               "Best Photography", "RYERSON UNIVERSITY" Canada 
+               <ul style="list-style-type: circle;">
+                <li>
+                  <mark>2017</mark>
+                </li>
+                <li>
+                  <mark>2019</mark>
+               </li>
+               <li>
+                <mark>2021</mark>
+               </li>
+              </ul>
+             </li>
+            
+           </ol>
+           <dl>
+             <dt>
+              IOP
+             </dt>
+             <dd>
+              INSTITUTE OF PHOTOGRAPHY
+             </dd>
+            <dt>
+             NYIP
+            </dt>
+            <dd>
+              NEW YORK INSTITUTE OF PHOTOGRAPHY
+            </dd>
+            <dt>
+              UNM
+             </dt>
+             <dd>
+              University of New Mexico
+             </dd>
+             <dt>
+              IED
+             </dt>
+             <dd>
+              Instituto Europeo Di Design
+             </dd>
+          </dl>
+       </div>
+    </main>
+              <!-- Perdorimi i hyperlink brenda faqes -->
+          <p align="center" id="pageUpDirecter"><a href="#firstLetter">Go Up &#8593</a></p>
+     <footer>
+           <section class="Quarter2">
+             <h3>Our Team</h3>
+             <div class="profile">
+               <img src="../img/profile.jpg">
+                <div class = "description">
+               <h4>Endrini's Bio</h4>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, nemo. Architecto impedit illo unde ab molestiae nulla veniam, veritatis iusto.</p>
+               <a href="../AboutUsPage/aboutUsPage.html">Read More &#xbb</a>
+             </div>
+             </div>
+              <div class="profile">
+               <img src="../img/alipash.jpg">
+               <div class = "description">
+               <h4>Albini's Bio</h4>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, nemo. Architecto impedit illo unde ab molestiae nulla veniam, veritatis iusto.</p>
+               <a href="../AboutUsPage/aboutUsPage.html">Read More &#xbb</a>
+             </div>
+             </div>
+              <div class="profile">
+               <img src="../img/profile.jpg">
+                <div class = "description">
+               <h4>Vesa's Bio</h4>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, nemo. Architecto impedit illo unde ab molestiae nulla veniam, veritatis iusto.</p>
+               <a href="../AboutUsPage/aboutUsPage.html">Read More &#xbb</a>
+             </div>
+             </div>
+           </section>
+           <section class="Quarter1">
+             <h3>Contact Info</h3>
+             <div class="contactInfo">
+                <h4>Endrini's Bio</h4>
+                <p><span class="role">Admin</span>,endrinbeqiri.com<br />
+                8th November,2001
+                </p>
+                <p>
+                <address>
+                Phone: +383 44 123 333<br />
+                <!-- Perdorimi i hyperlinkut per te derguar email -->
+                Email: <a href="mailto:endrinbeqiri@mail.com"> endrinbeqiri@mail.com </a>
+              </address>
+              </p>
+             </div>
+              <div class="contactInfo">
+                <h4>Albini's Bio</h4>
+                <p><span class="role">Admin</span>,albinhoxha.com<br />
+                  IDK Muaji,NdonjeVit
+                </p>
+                <p>
+                <address>
+                Phone: +383 44 123 333<br />
+                Email: <a href="mailto:albinhoxha@mail.com"> albinhoxha@mail.com</a>
+              </address>
+              </p>
+             </div>
+              <div class="contactInfo">
+                <h4>Vesa's Bio</h4>
+                <p><span class="role">Admin</span>,vesaternava.com<br />
+                IDK Muaji,NdonjeVit
+              </p>
+              <p>
+                <address>
+                Phone: +383 44 123 333<br />
+                Email: <a href="mailto:vesaternava@mail.com"> vesaternava@mail.com</a>
+              </address>
+              </p>
+             </div>
+           </section>
+           <section class="Quarter1">
+             <h3>Email Us</h3>
+             <!-- Kuptimi dhe qellimi i html formave -->
+             <form action="" method="post">
+               <input type="text" id="userName" name="name" placeholder="Name">
+          <input type="email" id="email" name="email" placeholder="Email">
+          <textarea rows="8" id="textArea" placeholder="Message"></textarea><br />
+               <input type="submit" name="submit" value="SUBMIT">
+             </form>
+           </section>
+        </footer>
+      <div class="copyright">
+        <p>Copyright &copy; 2021 - All Right Reserved</p>
+      </div>
+  </div>
+    <div class="form-popup" id="login">
+    <form class="form-container" id="blur">
+      <h1>Login</h1>
+
+      <div class="inputs">
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+      </div>
+
+      <div class="buttons">
+        <button type="submit" class="btn" onclick="showAlert()">Login</button>
+        <button type="button" class="btn cancel" onclick="closeLogin()">Close</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="form-popup" id="sign-up">
+    <form class="form-container" onsubmit="return validate()" method="post">
+      <h1>Sign Up</h1>
+      <p>Create account for memories</p>
+      <hr>
+      <div class="inputs">
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="something@mail.com" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input id="pw1" type="password" placeholder="Enter Password" name="psw"  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+
+        <label for="psw"><b>Confirm Password</b></label>
+        <input id="pw2" type="password" placeholder="Enter Password" name="psw" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+      
+
+      <div class="gender">
+        <div class="male">
+          <input type="radio" id="html" name="gender" value="male" required>
+          <label for="html">Male</label><br>
+        </div>
+        <div class="female">
+          <input type="radio" id="css" name="gender" value="female" required>
+          <label for="css">Female</label><br>
+        </div>
+      </div>
+      <div class="age">
+        <label for="age"><b>Age</b></label>
+        <input type="text" placeholder="Enter age" name="age" required id="age">
+      </div>
+      </div>
+      <label class="remember-me">
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+        Accept Terms and Agreements
+      </label>
+
+      <div class="buttons">
+        <button type="submit" class="btn">Sign up</button>
+        <button type="button" class="btn cancel" onclick="closeSignUp()">Close</button>
+      </div>
+    </form>
+  </div>
+  <script src="../homePage/script.js"></script>
+  </body>
+</html>
